@@ -8,7 +8,6 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 import { ajax } from "discourse/lib/ajax";
 import { hidePopover, showPopover } from "discourse/lib/d-popover";
 import Category from "discourse/models/category";
-import frLocale from "discourse-calendar/public/javascripts/locales";
 
 // https://stackoverflow.com/a/16348977
 /* eslint-disable */
