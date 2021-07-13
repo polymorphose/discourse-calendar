@@ -8,6 +8,7 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 import { ajax } from "discourse/lib/ajax";
 import { hidePopover, showPopover } from "discourse/lib/d-popover";
 import Category from "discourse/models/category";
+import frLocale from "discourse-calendar/public/javascripts/locales";
 
 // https://stackoverflow.com/a/16348977
 /* eslint-disable */
@@ -182,6 +183,7 @@ function initializeDiscourseCalendar(api) {
       $calendar.attr("data-calendar-show-add-to-calendar") !== "false";
 
     return new window.FullCalendar.Calendar($calendar[0], {
+      locale: frLocale,
       timeZone,
       timeZoneImpl: "moment-timezone",
       nextDayThreshold: "06:00:00",
